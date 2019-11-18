@@ -16,10 +16,10 @@ fasterq-dump SRX
 fasterq-dump SRX
 ```
 ## Counting Reads
-# Grep Stuff goes here
 ```grep -c ^"@SRX" *filename*```
 
 ###Word Count Method
+
 ``` wc -l *filename* ```
 
 A FASTQ file has 4 lines/read. Divide this number by 4 to get the amount of reads in each file. 
