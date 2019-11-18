@@ -18,7 +18,7 @@ fasterq-dump SRX
 ## Counting Reads
 ```grep -c ^"@SRX" *filename*```
 
-###Word Count Method
+### Word Count Method
 
 ``` wc -l *filename* ```
 
