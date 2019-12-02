@@ -37,3 +37,15 @@ $sed -n '1~4s/^@/>/p;2~4p' SRX746906_1.fastq >testOut.fasta
 3. Discontiguous megablast
 
 ref: [https://www.ncbi.nlm.nih.gov/books/NBK279680/]
+
+### Make blast database
+
+```
+makeblastdb -in testOut.fasta -dbtype nucl -parse_seqids
+```
+
+### blastn
+
+```
+$blastn –db testOut.fasta –query NC_002598.1.fasta –out results.out 
+```
