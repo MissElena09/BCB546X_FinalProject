@@ -42,7 +42,7 @@ SRX747740_2
 SRX747746_2
 
 # Convert from fastq to fasta and save to each new directory
-```sed -n '1~4s/^@/>/p;2~4p' SRX746906_1.fastq > SRX746906_1/SRX746906_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX746906_2.fastq > SRX746906_2/SRX746906_2.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747740_1.fastq > SRX747740_1/SRX747740_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747740_2.fastq > SRX747740_2/SRX747740_2.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747746_1.fastq > SRX747746_1/SRX747746_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747746_2.fastq > SRX747746_2/SRX747746_2.fasta &```
+$ sed -n '1~4s/^@/>/p;2~4p' SRX746906_1.fastq > SRX746906_1/SRX746906_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX746906_2.fastq > SRX746906_2/SRX746906_2.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747740_1.fastq > SRX747740_1/SRX747740_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747740_2.fastq > SRX747740_2/SRX747740_2.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747746_1.fastq > SRX747746_1/SRX747746_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747746_2.fastq > SRX747746_2/SRX747746_2.fasta &
 
 
 ## Blast
@@ -54,23 +54,23 @@ ref: [https://www.ncbi.nlm.nih.gov/books/NBK279680/]
 
 ### Make blast database
 
-```
-makeblastdb -in testOut.fasta -dbtype nucl -parse_seqids
-```
+
+$makeblastdb -in testOut.fasta -dbtype nucl -parse_seqids
+
 #### In order to run this command on multiple folders simultaneously, you can run the commmands connected by an ampersand.
-```
+
  $makeblastdb -in SRX747746_1db/SRX747746_1.fasta -dbtype nucl -parse_seqids & makeblastdb -in SRX747746_2db/SRX747746_2.fasta -dbtype nucl -parse_seqids
- ```
+ 
 
 
 ### blastn
 
-```
+
 $blastn –db testOut.fasta –query NC_002598.1.fasta –out results.out 
-```
+
 # Problems we've run into:
 ## Blast 
 Blast does not work on fastq files - fastq files need to be converted to fasta.  THere was no mention of this in the paper.
 In order to run Blast on fasta files, need to create a blast database.
 
-```
+
