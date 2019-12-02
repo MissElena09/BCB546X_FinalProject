@@ -71,6 +71,12 @@ blastn -db SRX747746_1db/SRX747746_1.fasta -query NC_002598.1.fasta -out b_combi
 
 ### blastn
 
+### megablast
+at the end of the command -task megablast
+
+### discontinuous megablast
+same but dc-megablast
+
 ```
 $blastn –db SRX*_db[database_title]_[1,2].fasta –query NC_[query_title].fasta –out b_[mock,pmv,combined]_[pmv,spmv]_[1,2].out 
 ```
