@@ -31,7 +31,7 @@ from fastq to fasta, prepare for blast
 ```
 $sed -n '1~4s/^@/>/p;2~4p' SRX746906_1.fastq >testOut.fasta
 ```
-# Make Directories for each fastq file
+### Make Directories for each fastq file
 mkdir filename.fastq
 
 SRX746906_1
@@ -41,7 +41,7 @@ SRX746906_2
 SRX747740_2
 SRX747746_2
 
-# Convert from fastq to fasta and save to each new directory
+### Convert from fastq to fasta and save to each new directory
 sed -n '1~4s/^@/>/p;2~4p' SRX746906_1.fastq > SRX746906_1/SRX746906_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX746906_2.fastq > SRX746906_2/SRX746906_2.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747740_1.fastq > SRX747740_1/SRX747740_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747740_2.fastq > SRX747740_2/SRX747740_2.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747746_1.fastq > SRX747746_1/SRX747746_1.fasta & sed -n '1~4s/^@/>/p;2~4p' SRX747746_2.fastq > SRX747746_2/SRX747746_2.fasta &
 
 
