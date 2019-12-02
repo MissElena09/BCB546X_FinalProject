@@ -61,5 +61,5 @@ makeblastdb -in testOut.fasta -dbtype nucl -parse_seqids
 ### blastn
 
 ```
-$blastn –db testOut.fasta –query NC_002598.1.fasta –out results.out 
+$blastn –db SRX*_db[database_title]_[1,2].fasta –query NC_[query_title].fasta –out b_[mock,pmv,combined]_[pmv,spmv]_[1,2].out 
 ```
