@@ -12,6 +12,7 @@ Download cluster: SRA toolkit download
 Ref genomes for PMV & SPMV: Ref AccessonIDs: SRX746906; SRX747740; SRX747746.
 
 What They Did:
+
 * Sequenced Samples
 * Counted Reads
 * BLAST: 
@@ -23,6 +24,7 @@ What They Did:
 
 
 Reproduce what they did:
+
 * Download Data
 * Count Reads
 * Download Ref. Genomes
