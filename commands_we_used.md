@@ -56,6 +56,9 @@ ref: [https://www.ncbi.nlm.nih.gov/books/NBK279680/]
 
 ```
 makeblastdb -in testOut.fasta -dbtype nucl -parse_seqids
+
+#### In order to run this command on multiple folders simultaneously, you can run the commmands connected by an ampersand.
+ $makeblastdb -in SRX747746_1db/SRX747746_1.fasta -dbtype nucl -parse_seqids & makeblastdb -in SRX747746_2db/SRX747746_2.fasta -dbtype nucl -parse_seqids
 ```
 
 ### blastn
