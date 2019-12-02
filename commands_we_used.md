@@ -56,19 +56,21 @@ ref: [https://www.ncbi.nlm.nih.gov/books/NBK279680/]
 
 ```
 makeblastdb -in testOut.fasta -dbtype nucl -parse_seqids
-
-#### In order to run this command on multiple folders simultaneously, you can run the commmands connected by an ampersand.
- $makeblastdb -in SRX747746_1db/SRX747746_1.fasta -dbtype nucl -parse_seqids & makeblastdb -in SRX747746_2db/SRX747746_2.fasta -dbtype nucl -parse_seqids
 ```
+#### In order to run this command on multiple folders simultaneously, you can run the commmands connected by an ampersand.
+```
+ $makeblastdb -in SRX747746_1db/SRX747746_1.fasta -dbtype nucl -parse_seqids & makeblastdb -in SRX747746_2db/SRX747746_2.fasta -dbtype nucl -parse_seqids
+ ```
+
 
 ### blastn
 
 ```
 $blastn –db testOut.fasta –query NC_002598.1.fasta –out results.out 
-
+```
 # Problems we've run into:
 ## Blast 
-Blast does not work on fastq - fastq files need to be converted to fasta.  THere was no mention of this in the paper.
+Blast does not work on fastq files - fastq files need to be converted to fasta.  THere was no mention of this in the paper.
 In order to run Blast on fasta files, need to create a blast database.
 
 ```
