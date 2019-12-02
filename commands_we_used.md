@@ -25,7 +25,7 @@ fasterq-dump SRX
 
 A FASTQ file has 4 lines/read. Divide this number by 4 to get the amount of reads in each file. 
 
-## Format change:
+## Format change
 from fastq to fasta, prepare for blast
 
 ```
@@ -35,4 +35,5 @@ $sed -n '1~4s/^@/>/p;2~4p' SRX746906_1.fastq >testOut.fasta
 1. Blastn
 2. Megablast
 3. Discontiguous megablast
+
 ref: [https://www.ncbi.nlm.nih.gov/books/NBK279680/]
