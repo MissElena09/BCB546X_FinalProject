@@ -87,8 +87,10 @@ $blastn –db SRX*_db[database_title]_[1,2].fasta –query NC_[query_title].fast
  
  ```
  sort -k2 b_combined_pmv_1.out | awk '{A[$2]++}END{for(i in A)print i,A[i]}' | wc -l
+
  ```
- 
+#### Grepping out the reads that mapped to our reference genome to form a FASTA that contains the mapped reads.
+$  cut -f 2 b_combined_pmv_1.out | sort | uniq | while read line; do grep -A1 -w “$line” SRX746906_1db/testOut.fasta >> b_combined_pmv.fasta; done;
  
 # Problems we've run into:
 ## Blast 
