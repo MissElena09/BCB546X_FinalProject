@@ -29,29 +29,10 @@ SRA Accession IDs:
 |---|---|
 | Sequenced Samples  |  Download Data |
 |  Counted Reads | Count Reads  |
-|  BLAST: Seq. Data = database Ref. Genome = queries | Download Ref. Genomes  |   
-| Assembled into contigs with CodonCode Aligner (Contigs as query for megablast in NCBI)   | BLAST stuff  |
+||Download Ref. Genomes |
+|  BLAST: Seq. Data = database Ref. Genome = queries | BLAST reads  | 
 | |Tabulate results & compare to Table S1|
-
-What They Did:
-
-* Sequenced Samples
-* Counted Reads
-* BLAST: 
-  * Seq. Data = database
-  * Reg. Genome = queries
-* For reads that blast-ed to ref.genomes:
-  * Assembled into contigs with CodonCode Aligner
-  * Contigs as query for megablast in NCBI
-
-
-Reproduce what they did:
-
-* Download Data
-* Count Reads
-* Download Ref. Genomes
-* BLAST stuff
-* Tabulate results & compare to Table S1
+| Assembled into contigs with CodonCode Aligner (Contigs as query for megablast in NCBI)| Assembled into contigs with CodonCode Aligner (Contigs as query for megablast in NCBI) |
 
 **File transfer protocol:**
 1. Download FileZilla on local desktop/computer. 
