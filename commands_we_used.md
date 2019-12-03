@@ -99,7 +99,9 @@ $  cut -f 2 b_combined_pmv_1.out | sort | uniq | while read line; do grep -A1 -w
 
 * For FASTQ file:
 
-```cut -f 2 b_pmv_pmv_1.out | sort | uniq | while read line; do grep --no-group-separator -A1 -w "$line" SRX747740_1db/SRX747740_1.fastq >> b_pmv_pmv.fastq; done;```
+```
+cut -f 2 b_pmv_pmv_1.out | sort | uniq | while read line; do grep --no-group-separator -A1 -w "$line" SRX747740_1db/SRX747740_1.fastq >> b_pmv_pmv.fastq; done;
+```
  
 # Problems we've run into:
 ## Blast 
