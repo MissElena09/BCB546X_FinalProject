@@ -20,12 +20,9 @@ Ref genomes for PMV & SPMV: Ref AccessonIDs: SRX746906; SRX747740; SRX747746.
 |---|---|
 | Sequenced Samples  |  Download Data |   |   |   |
 |  Counted Reads | Count Reads  |   |   |   |
-|  BLAST: 
-   Seq. Data = database
-   Reg. Genome = queries | Download Ref. Genomes  |   
-|For reads that blast-ed to ref.genomes:
-  * Assembled into contigs with CodonCode Aligner
-  * Contigs as query for megablast in NCBI   | BLAST stuff  |
+|  BLAST: \n Seq. Data = database \n Ref. Genome = queries | Download Ref. Genomes  |   
+| Assembled into contigs with CodonCode Aligner
+  (Contigs as query for megablast in NCBI)   | BLAST stuff  |
   | |Tabulate results & compare to Table S1|
 
 What They Did:
