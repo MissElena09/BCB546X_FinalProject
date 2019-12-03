@@ -102,4 +102,3 @@ $  cut -f 2 b_combined_pmv_1.out | sort | uniq | while read line; do grep -A1 -w
 * Adjusted our blast command to include an output format that was tabular and set a maximum for the number of target sequences.If not, the default max would be 250 sequences. 
 * After running the blast, trying to figure out why we had more reads than they did in some cases: Used the following code to count the # of unique reads: sorted by the column of read location (column 2 in tabular file), then piped to an awk command to look at the uniq results in that column, then piped to a wc to count the # of lines in the file.
 
->>>>>>> 15955e63d0dba0f41780cd8ad55f26935b0e9369
