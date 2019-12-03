@@ -92,8 +92,9 @@ $blastn –db SRX*_db[database_title]_[1,2].fasta –query NC_[query_title].fast
  
 # Problems we've run into:
 ## Blast 
-Blast does not work on fastq files - fastq files need to be converted to fasta.  THere was no mention of this in the paper.
-In order to run Blast on fasta files, need to create a blast database.
-
+* Blast does not work on fastq files - fastq files need to be converted to fasta.  THere was no mention of this in the paper.
+* In order to run Blast on fasta files, need to create a blast database.
+* Adjusted our blast command to include an output format that was tabular and set a maximum for the number of target sequences.If not, the default max would be 250 sequences. 
+* After running the blast, trying to figure out why we had more reads than they did in some cases: Used the following code to count the # of unique reads: sorted by the column of read location (column 2 in tabular file), then piped to an awk command to look at the uniq results in that column, then piped to a wc to count the # of lines in the file.
 
 >>>>>>> 15955e63d0dba0f41780cd8ad55f26935b0e9369
