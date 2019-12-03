@@ -31,3 +31,15 @@ Reproduce what they did:
 * BLAST stuff
 * Tabulate results & compare to Table S1
 
+**File transfer protocol:**
+1. Download FileZilla on local desktop/computer. 
+2. In the toolbars, select File->Site Manager
+3. Creat new site
+4. * Host:hpc-class.its.iastate.edu
+   * Protocol: SFTP - SSH File Transfer Protocol
+   * Type: Interactive
+   * User: yourNetID
+   * In AdvancedSetting, put /ptmp/zlozier as the remote directory. 
+ Then Connect!
+ 
+ Different hpc cluster might have different file transfer protocls. 
