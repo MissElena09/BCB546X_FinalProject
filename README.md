@@ -2,34 +2,37 @@
 
 ## *Panicum Mosaic Virus* and Its Satellites Acquire RNA Modifications Associated with Host-Mediated Antiviral Degradation
 
+**Purpose:**
 This assignment is the final project for BCB546X Fall 2019. 
 The purpose is to create a well-documented pipeline of the chosen paper to understand the importance and difficulty of reproducing research.
+
+**Description:**
+
 
 ### Pipeline
 
 Download cluster: SRA toolkit download
 
-Ref genomes for PMV & SPMV: Ref AccessonIDs: SRX746906; SRX747740; SRX747746.
+Ref genomes AccesionIDs for PMV & SPMV:
 
-What They Did:
+ * NC_002598.1 
+ * NC_003847.1
+ 
+SRA Accession IDs:
 
-* Sequenced Samples
-* Counted Reads
-* BLAST: 
-  * Seq. Data = database
-  * Reg. Genome = queries
-* For reads that blast-ed to ref.genomes:
-  * Assembled into contigs with CodonCode Aligner
-  * Contigs as query for megablast in NCBI
+ * SRX746906
+ * SRX747740
+ * SRX747746.
 
 
-Reproduce what they did:
-
-* Download Data
-* Count Reads
-* Download Ref. Genomes
-* BLAST stuff
-* Tabulate results & compare to Table S1
+|**What the Authors did:** |  **What We are going to do:**   |
+|---|---|
+| Sequenced Samples  |  Download Data |
+|  Counted Reads | Count Reads  |
+||Download Ref. Genomes |
+|  BLAST: Seq. Data = database Ref. Genome = queries | BLAST reads  | 
+| |Tabulate results & compare to Table S1|
+| Assembled into contigs with CodonCode Aligner (Contigs as query for megablast in NCBI)| Assembled into contigs with CodonCode Aligner (Contigs as query for megablast in NCBI) |
 
 **File transfer protocol:**
 1. Download FileZilla on local desktop/computer. 
