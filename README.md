@@ -15,6 +15,6 @@
   * mapped_reads.slurm - shell script written by Zach Lozier.Extracts reads that mapped to each reference genome and saves in 
   FASTA and FASTQ format.
   
-* raw_data
-  * NC_002598.1.fasta - *Panicum Mosaic Virus*
-  * NC_003847.1.fasta - *Satellite Panicum Mosaic Virus*
+* Data
+  * NC_002598.1.fasta - *Panicum Mosaic Virus* reference genome
+  * NC_003847.1.fasta - *Satellite Panicum Mosaic Virus* reference genome
