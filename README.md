@@ -8,6 +8,7 @@ Files:
 * Group_Project_Presentation.pptx - Final Presentation over the project.
 * Results_Spreadsheet.xlsx - Table containing our blastn, megablast and discontinuous megablast results compared to *TableS1*
 * CodonCodeAligner HowTo.pdf - Explains how to use the CodonCode Aligner software
+
 Directories:
 
 * Codes
